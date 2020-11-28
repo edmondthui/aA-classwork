@@ -1,24 +1,7 @@
-# README
+# W8D1 Reddit Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Be able to write auth from scratch
+* Use a before_action to manage user access to resources
+* Write Rails models, controllers, and views quickly
+* Use regular associations and join tables
+* Avoid N+1 queries
