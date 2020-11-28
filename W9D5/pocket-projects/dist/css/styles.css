@@ -1,0 +1,167 @@
+
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome {
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+#party {
+  margin-top: 100px;
+}
+
+/* Phase 1: Clock */
+
+.clock-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+  border: 1px solid white;
+  margin: 20px 150px;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  padding: 14px 40px;
+  border-radius: 5px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.drop-down-dog-nav {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  margin: 20px 150px;
+  cursor: pointer;
+  font-weight: 700;
+  display: relative;
+  color: #767B91;
+  border-radius: 5px;
+}
+
+.drop-down-dog-nav h3{
+  line-height: 50px;
+}
+
+.drop-down-dog-list {
+  display: none;
+}
+
+.dog-link a {
+  color: #767B91;
+  font-weight: 500;
+  /* padding: 10px 10px; */
+}
+
+.dog-link {
+  margin: 10px 10px;
+  text-align: start;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: 100px;
+  width: 200px;
+}
+
+.todo-container {
+  background-color: #F0F2EF;
+  max-width: 700px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.add-input {
+  width: 80px;
+  height: 30px;
+  background-color: #EFEFEF;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+}
+
+.add-todo{
+  height: 26px;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.todos li {
+  font-size: 18px;
+}
+
+.todos li label {
+  text-align: center;
+}
+
+.slide-and-scroll {
+  background-color: #F0F2EF;
+  max-width: 700px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20px;
+}

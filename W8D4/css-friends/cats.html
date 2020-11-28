@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>App Academy Friends</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" type="text/css">
+  <link rel="stylesheet" href="css/00-reset.css" type="text/css">
+  <link rel="stylesheet" href="css/01-header.css" type="text/css">
+  <link rel="stylesheet" href="css/02-notifications.css" type="text/css">
+  <link rel="stylesheet" href="css/03-layout.css" type="text/css">
+  <link rel="stylesheet" href="css/04-footer.css" type="text/css">
+  <link rel="stylesheet" href="css/05-cats.css" type="text/css">
+  <link rel="stylesheet" href="css/06-sidebar.css" type="text/css">
+  <link rel="stylesheet" href="css/07-online.css" type="text/css">
+  <link rel="stylesheet" href="css/08-thumbs.css" type="text/css">
+  <link rel="stylesheet" href="css/09-forms.css" type="text/css">
+  <link rel="stylesheet" href="css/10-posts.css" type="text/css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header-nav">
+
+      <h1 class="header-logo">
+        <a href="#">App Academy Friends</a>
+      </h1>
+
+      <ul class="header-list">
+        <li>
+          <a href="#">Notifications <strong class="badge">3</strong></a>
+          <ul class="header-notifications">
+            <li><a href="#">Constance likes your photo.</a></li>
+            <li><a href="#">Tommy left you a comment.</a></li>
+            <li><a href="#">Jonathan is now following you.</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <header class="content-header">
+      <h1>Sennacy The Great</h1>
+      <button class="content-header-add-friend">Add Friend</button>
+    </header>
+
+    <section class="content-sidebar">
+      <a href="#" class = "profile-picture">
+        <p class="online">Online</p>
+        <img src="./images/cat.jpg" alt="cat">
+      </a>
+
+      <div class="profile-info">
+        <h2>Sennacy</h2>
+        <p class="profile-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+
+      <ul class="profile-nav">
+        <li><a href="#">Wall</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Friends</a></li>
+        <li><a href="#">Photos</a></li>
+      </ul>
+
+      <ul class="profile-thumbs">
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="thumb" title="Jonathan">
+            <img src="./images/cat.jpg" alt="cat">
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="content-main">
+
+      <form action="#" class="post-form">
+        <img src="./images/cat.jpg" alt="cat" class="form-thumb">
+
+        <fieldset class = "fieldset">
+
+          <div class="title-fieldset">
+            <label for="title" class="form-label">Post Title</label>
+            <input type="text" id="title" value="Lorem Ipsum Dolor Sit Amet" class = "input">
+          </div>
+
+          <div class="body-fieldset">
+            <label for="body" class="form-label">Post Body</label>
+            <textarea id="body" class="input" rows=5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </textarea>
+          </div>
+
+          <input type="submit" value="Post To Wall" class="submit">
+
+          <p class="p">or</p>
+
+          <a href="#" class="form-cancel">Cancel</a>
+        </fieldset>
+
+      </form>
+
+
+      <section class = "content-posts">
+        <article class= "post">
+          <img src="./images/cat.jpg" alt="cat" class="post-thumb">
+          <div class="post-content">
+            <h2 class = "post-title">Hello World</h2>
+            <p class = "post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <footer class="post-footer">
+              <ul class="footer-info">
+                <li><a href="#">Sennacy</a></li>
+                <li>3 hours ago</li>
+                <li>541 views</li>
+              </ul>
+              <ul class="footer-actions">
+                <li>Comment</li>
+                <li>Reblog</li>
+                <li>Favorite</li>
+              </ul>
+            </footer>
+          </div>
+        </article>
+        <article class= "post">
+          <img src="./images/cat.jpg" alt="cat" class="post-thumb">
+          <div class="post-content">
+            <h2 class = "post-title">Hello World</h2>
+            <p class = "post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <footer class="post-footer">
+              <ul class="footer-info">
+                <li><a href="#">Sennacy</a></li>
+                <li>3 hours ago</li>
+                <li>541 views</li>
+              </ul>
+              <ul class="footer-actions">
+                <li>Comment</li>
+                <li>Reblog</li>
+                <li>Favorite</li>
+              </ul>
+            </footer>
+          </div>
+        </article>
+        <article class= "post">
+          <img src="./images/cat.jpg" alt="cat" class="post-thumb">
+          <div class="post-content">
+            <h2 class = "post-title">Hello World</h2>
+            <p class = "post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <footer class="post-footer">
+              <ul class="footer-info">
+                <li><a href="#">Sennacy</a></li>
+                <li>3 hours ago</li>
+                <li>541 views</li>
+              </ul>
+              <ul class="footer-actions">
+                <li>Comment</li>
+                <li>Reblog</li>
+                <li>Favorite</li>
+              </ul>
+            </footer>
+          </div>
+        </article>
+  
+  
+      </section>
+
+    </section>
+
+    
+
+
+  </main>
+
+  <footer class="footer">
+
+    <small class="footer-copy">
+      &copy; 2014 App Academy. All rights reserved.
+    </small>
+
+    <ul class="footer-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+
+  </footer>
+
+</body>
+</html>

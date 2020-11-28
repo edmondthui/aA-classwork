@@ -1,0 +1,3 @@
+--require spec_helper
+--color # adds color to specs 
+--format documentation # organizes specs

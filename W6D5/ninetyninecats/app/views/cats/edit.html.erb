@@ -1,0 +1,36 @@
+<h1> Edit Cat </h1>
+<%= render 'form', is_edit: true, cat: @cat %>
+
+<!--
+<form action="<%= cat_url(@cat) %>" method= "POST">
+<input type="hidden" name="_method" value="PATCH">
+    <label for = "name"> Cat Name </label>
+    <input name = "cat[name]" id = "name" value = "<%=@cat.name%>" type = "text">
+    <br>
+    <label for = "birth_date"> Birth Date </label>
+    <input name = "cat[birth_date]" id = "birth_date" value = "<%=@cat.birth_date%>" type = "date">
+    <br>
+    <label for = "color"> Color </label>
+    <input name = "cat[color]" id = "color" value = "<%=@cat.color%>" type = "text">
+    <br>
+   
+    
+    <label for = "sex"> Sex </label>
+    <label for = "m"> M </label>
+    <input name = "cat[sex]" id = "m" value = "M" type= "radio" <%= @cat.sex == "M" ? "checked" : ""%>>
+    <label for = "f"> F </label>
+    <input name = "cat[sex]" id = "f" value = "F" type= "radio" <%= @cat.sex == "F" ? "checked" : ""%>>
+
+
+    <br>
+    <label for = "description"> Description </label>
+    <textarea name = "cat[description]" id = "description">
+    <%=@cat.description%>
+    </textarea>
+    <br>
+    <br>
+    <input name type="submit" value="Edit Cat"> 
+
+</form>
+
+--> 

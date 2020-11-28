@@ -1,0 +1,15 @@
+.section {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $light-gray;
+}
+
+.section li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.section li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

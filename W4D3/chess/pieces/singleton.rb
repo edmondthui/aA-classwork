@@ -1,0 +1,4 @@
+module Singleton
+
+
+end

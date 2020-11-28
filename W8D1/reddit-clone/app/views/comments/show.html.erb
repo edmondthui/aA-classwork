@@ -1,0 +1,12 @@
+<b>Reply to this comment:</b>
+<form action="<%= comments_url %>" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">  
+  <input type="hidden" name="comment[post_id]" value="<%= Comment.find_by(id: params[:id]).post_id %>">
+  <input type="hidden" name="comment[parent_comment_id]" value="<%= params[:id] %>">
+
+  <label for="content">Content</label>
+  <br/>
+  <textarea name="comment[content]" id="content"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>

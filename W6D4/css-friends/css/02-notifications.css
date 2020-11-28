@@ -1,0 +1,33 @@
+/* PHASE 2: Notifications */
+
+ul li {
+    position: relative;
+}
+
+.stuff a {
+    color: black;
+    border: none;
+}
+
+ul > li > ul > li {
+    border: none;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+.stuff {
+    display: none;
+}
+
+
+
+.badge:hover .stuff {
+    display: block;
+
+}
+
+li:hover .stuff {
+    display: block;
+}

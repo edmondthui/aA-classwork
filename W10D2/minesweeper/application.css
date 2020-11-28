@@ -1,0 +1,43 @@
+.tile {
+    border-style: outset;
+    background-color: lightgray;
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.explored {
+    border-style: inset;
+    background-color: darkgray;
+    font-weight: 900;
+}
+
+#board {
+    /* width: 270px; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+p{
+    margin: 0px;
+}
+
+.play {
+    display: block;
+    width: 100px;
+    margin: 20px;
+}
+
+.game {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}

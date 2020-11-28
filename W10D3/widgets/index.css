@@ -1,0 +1,128 @@
+#root {
+    font-family: 'Open Sans';
+}
+
+.clock-box {
+    display: flex;
+    align-items: center;
+    background-color: #8a0303;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: auto;
+    width: 700px;
+    margin-top: 100px;
+    opacity: 0.7;
+  
+}
+
+.time, .date{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+body {
+    /* background-image: url(https://media.comicbook.com/2020/10/berserk-god-hand-origin-1241993.jpeg?auto=webp&width=690&height=360&crop=690:360,smart); */
+    /* background-image: url(https://static.wikia.nocookie.net/berserk/images/2/25/Manga_E0F_God_Hand.png/revision/latest?cb=20190402003143); */
+    background-image: url(https://static.displate.com/857x1200/displate/2019-03-28/5a61ccfcaf1540e636b3f4af33d2a1a3_a769b51fc69fc75d95182649d0ebb008.jpg);
+    margin: 0; 
+    padding: 0; 
+    background-size: cover;
+}
+
+.tab-box {
+    font-weight: 700;
+    background-color: #8a0303;
+    border: 2px solid black;
+    width: 75px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+}
+
+.tab-box header {
+    cursor: pointer;
+}
+
+.tab-box header:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.inner-tab-holder {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.article {
+    width: 391px;
+    background-color: #ADD8E6;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 200px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-holder {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected {
+    border-bottom: 0px;
+}
+
+.selected:hover {
+    border-bottom: 2px solid black;
+}
+
+.resize {
+    width: 391px;
+    height: 200px;
+}
+
+#click {
+    z-index: -1;
+}
+
+
+
+section { 
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png); 
+    animation: rain 0.4s linear infinite; 
+    opacity: 0; 
+} 
+
+@keyframes rain { 
+    0% { 
+        background-position: 0 0; 
+        opacity: 1; 
+    } 
+
+    100% { 
+        background-position: 10% 100%; 
+        opacity: 1; 
+    } 
+} 
+/* applying filter at different angle 
+on diffrent interval using keyframe*/ 
