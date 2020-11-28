@@ -1,24 +1,7 @@
-# README
+# W11D4 BenchBnB Part I
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+React and Redux with Rails backend
 
-Things you may want to cover:
+Frontend auth and filters for benches
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Create new benches by clicking on the map
