@@ -1,4 +1,4 @@
-# BenchBnB
+# W11D2 BenchBnB Part II
 
 React and Redux with Rails backend
 
