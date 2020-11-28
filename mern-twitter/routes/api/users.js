@@ -5,12 +5,11 @@ const bcrypt = require("bcryptjs");
 const keys = require("../../config/keys");
 const jwt = require("jsonwebtoken");
 const validateRegisterInput = require("../../validation/register");
-const vaalidateLoginInput = require("../../validation/login")
-
-router.get("/test", (req, res) => res.json({ msg: "This is the tweet route" }));
+const vaalidateLoginInput = require("../../validation/login");
+const passport = require("passport");
 
 router.post("/register", (req, res) => {
-  const {errors, isValid} = validateRegisterInput(req.body);
+  const { errors, isValid } = validateRegisterInput(req.body);
 
   if (!isValid) {
     return res.status(400).json(errors);
@@ -43,10 +42,10 @@ router.post("/register", (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-  const { errors, isValid} = vaalidateLoginInput(req.body);
+  const { errors, isValid } = vaalidateLoginInput(req.body);
 
   if (!isValid) {
-    return res.status(400).json(errors)
+    return res.status(400).json(errors);
   }
 
   const email = req.body.email;
@@ -57,8 +56,7 @@ router.post("/login", (req, res) => {
       return res.status(404).json({ email: "This user does not exist." });
     }
 
-    bcrypt.compare(password, user.password)
-    .then((isMatch) => {
+    bcrypt.compare(password, user.password).then((isMatch) => {
       if (isMatch) {
         const payload = {
           id: user.id,
@@ -82,4 +80,17 @@ router.post("/login", (req, res) => {
     });
   });
 });
+
+router.get(
+  "/current",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    res.json({
+      id: req.user.id,
+      handle: req.user.handle,
+      email: req.user.email,
+    });
+  }
+);
+
 module.exports = router;
